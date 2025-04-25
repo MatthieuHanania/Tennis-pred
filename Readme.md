@@ -40,7 +40,7 @@ A wide range of custom features are created, including:
 - **Win/loss form by surface**
 - **Head-to-head record**
 
-> These features dramatically improve the model’s ability to generalize across different players and surfaces.
+> These were calculated dynamically using rolling windows and player history.
 
 ### 3. 📊 Temporal Feature Engineering
 - Recent player form and momentum (e.g., last 5 matches winrate)
@@ -84,6 +84,12 @@ The model shows strong predictive performance across surfaces and players, thank
 
 ---
 
+## 📬 File Summary
+
+- `Tennis_Match_Prediction.ipynb` — Jupyter notebook with the full data pipeline, feature engineering, and model training steps.
+
+---
+
 ## 🛠 Requirements
 
 - Python 3.7+
@@ -97,3 +103,13 @@ Install dependencies:
 
 ```bash
 pip install -r requirements.txt
+```
+---
+
+## 🤝 Credits
+
+Data: [http://tennis-data.co.uk/](http://tennis-data.co.uk/)
+
+Author: Matthieu Hanania
+
+Tools: Python, scikit-learn, LightGBM, pandas
